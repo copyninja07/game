@@ -1,0 +1,821 @@
+<div class="col-md-12 col-lg-12">
+  <div class="card">
+    <div class="card-body">
+      <div class="react-table__wrapper">
+        <div class="card__title">
+          <h5 class="bold-text">drop react-table</h5>
+          <h5 class="subhead">
+            <span class="red-text"> drop</span>
+          </h5>
+        </div>
+        <div class="react-table__customizer row">
+          <div class="table__collapse">
+            <button class="table__btn" type="button">
+              <h5>Table customizer</h5>
+              <svg
+                class="mdi-icon table__icon"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                ></path>
+              </svg>
+            </button>
+            <div class="table__collapse-content collapse">
+              <div class="table__collapse-title-wrap">
+                <p>
+                  This customizer allows you to see the different variations of
+                  the data table.
+                </p>
+              </div>
+              <div class="table__collapse-item">
+                <label
+                  class="toggle-btn table__toggle"
+                  for="Filtration mode_toggle"
+                  ><input
+                    class="toggle-btn__input"
+                    type="checkbox"
+                    name="Filtration mode_toggle"
+                    id="Filtration mode_toggle"
+                  /><span class="toggle-btn__input-label table__toggle"></span
+                  ><span class="pagination__item pagination-info"
+                    >Filtration mode</span
+                  ></label
+                ><label
+                  class="toggle-btn table__toggle"
+                  for="Sortable mode_toggle"
+                  ><input
+                    class="toggle-btn__input"
+                    type="checkbox"
+                    name="Sortable mode_toggle"
+                    id="Sortable mode_toggle"
+                  /><span class="toggle-btn__input-label table__toggle"></span
+                  ><span class="pagination__item pagination-info"
+                    >Sortable mode</span
+                  ></label
+                ><label
+                  class="toggle-btn table__toggle"
+                  for="Pagination mode_toggle"
+                  ><input
+                    class="toggle-btn__input"
+                    type="checkbox"
+                    name="Pagination mode_toggle"
+                    id="Pagination mode_toggle"
+                    checked=""
+                  /><span class="toggle-btn__input-label table__toggle"></span
+                  ><span class="pagination__item pagination-info"
+                    >Pagination mode</span
+                  ></label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="table__search">
+          <input
+            placeholder="Search by First name..."
+            type="text"
+            class="table__search table__search-input form-control"
+          />
+        </div>
+        <div class="table react-table">
+          <table role="table" class="react-table resizable-table">
+            <thead class="thead th">
+              <tr role="row" class="react-table thead tr">
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable">#</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >First name</span
+                    ><span class="react-table__column-header sortable"
+                      ><span
+                        ><svg
+                          class="mdi-icon"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 7H22L18 3L14 7H17V21H19M2 17H12V19H2M6 5V7H2V5M2 11H9V13H2V11Z"
+                          ></path></svg></span></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >Last name</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >Username</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable">Age</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >Date</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th
+                  colspan="1"
+                  role="columnheader"
+                  style={{position: "relative"}}
+                  title="Toggle SortBy"
+                >
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >Location</span
+                    ><span class="react-table__column-header sortable"
+                      ><svg
+                        class="mdi-icon"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"
+                        ></path></svg></span
+                  ></span>
+                </th>
+                <th colspan="1" role="columnheader" style={{position: "relative"}}>
+                  <span class="react-table__column-header"
+                    ><span class="react-table__column-header sortable"
+                      >Work</span
+                    ></span
+                  >
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="table table--bordered"
+              role="rowgroup"
+              data-rbd-droppable-id="draggable"
+              data-rbd-droppable-context-id="1"
+              style={{background:" rgb(242, 244, 247)"}}
+            >
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="29"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="29"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                  cursor: "pointer",
+                  background: "rgb(255, 255, 255)",
+                  z-index: 101,
+                }}
+              >
+                <td role="cell">30</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Morrison</td>
+                <td role="cell">@dragon</td>
+                <td role="cell">31</td>
+                <td role="cell">6/14/1961</td>
+                <td role="cell">Rome</td>
+                <td role="cell">Starlight</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="26"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="26"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">27</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Morrison</td>
+                <td role="cell">@dragon</td>
+                <td role="cell">48</td>
+                <td role="cell">4/9/1966</td>
+                <td role="cell">Melbourne</td>
+                <td role="cell">Nova Soft</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="25"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="25"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">26</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@hamster</td>
+                <td role="cell">34</td>
+                <td role="cell">10/13/1986</td>
+                <td role="cell">Melbourne</td>
+                <td role="cell">Dog Shop</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="24"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="24"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">25</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@cat</td>
+                <td role="cell">49</td>
+                <td role="cell">12/21/1968</td>
+                <td role="cell">Rome</td>
+                <td role="cell">Dog Shop</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="23"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="23"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">24</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Medinberg</td>
+                <td role="cell">@hamster</td>
+                <td role="cell">44</td>
+                <td role="cell">12/12/1988</td>
+                <td role="cell">Melbourne</td>
+                <td role="cell">Aspirity</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="15"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="15"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">16</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Morrison</td>
+                <td role="cell">@cat</td>
+                <td role="cell">26</td>
+                <td role="cell">8/1/1996</td>
+                <td role="cell">Rome</td>
+                <td role="cell">Aspirity</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="11"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="11"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">12</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@dragon</td>
+                <td role="cell">43</td>
+                <td role="cell">9/11/1970</td>
+                <td role="cell">Tokio</td>
+                <td role="cell">Aspirity</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="8"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="8"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">9</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Medinberg</td>
+                <td role="cell">@dragon</td>
+                <td role="cell">41</td>
+                <td role="cell">4/8/1977</td>
+                <td role="cell">Tokio</td>
+                <td role="cell">Nova Soft</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="5"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="5"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">6</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@cat</td>
+                <td role="cell">32</td>
+                <td role="cell">7/10/1987</td>
+                <td role="cell">Tokio</td>
+                <td role="cell">Aspirity</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="3"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="3"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">4</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Medinberg</td>
+                <td role="cell">@dragon</td>
+                <td role="cell">44</td>
+                <td role="cell">7/31/1972</td>
+                <td role="cell">Melbourne</td>
+                <td role="cell">Starlight</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="2"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="2"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                    cursor: "pointer",
+                    background: "rgb(255, 255, 255)",
+                    z-index: 101
+                  }}
+              >
+                <td role="cell">3</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Maria</span></span
+                  >
+                </td>
+                <td role="cell">Medinberg</td>
+                <td role="cell">@cat</td>
+                <td role="cell">33</td>
+                <td role="cell">1/14/1998</td>
+                <td role="cell">Melbourne</td>
+                <td role="cell">Starlight</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="30"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="30"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                  cursor: "pointer",
+                  background: "rgb(255, 255, 255)",
+                  z-index: 101,
+                }}
+              >
+                <td role="cell">31</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Bobby </span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@cat</td>
+                <td role="cell">25</td>
+                <td role="cell">7/1/1981</td>
+                <td role="cell">Tokio</td>
+                <td role="cell">Nova Soft</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="27"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="27"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                  cursor: "pointer",
+                  background: "rgb(255, 255, 255)",
+                  z-index: 101,
+                }}
+              >
+                <td role="cell">28</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Bobby </span></span
+                  >
+                </td>
+                <td role="cell">Brown</td>
+                <td role="cell">@hamster</td>
+                <td role="cell">50</td>
+                <td role="cell">3/18/1980</td>
+                <td role="cell">Moscow</td>
+                <td role="cell">Nova Soft</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="21"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="21"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                  cursor: "pointer",
+                  background: "rgb(255, 255, 255)",
+                  z-index: 101,
+                }}
+              >
+                <td role="cell">22</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Bobby </span></span
+                  >
+                </td>
+                <td role="cell">Medinberg</td>
+                <td role="cell">@cat</td>
+                <td role="cell">37</td>
+                <td role="cell">4/29/1973</td>
+                <td role="cell">Moscow</td>
+                <td role="cell">Business Bro</td>
+              </tr>
+              <tr
+                class="react-dnd-draggable"
+                data-rbd-draggable-context-id="1"
+                data-rbd-draggable-id="19"
+                tabindex="0"
+                role="row"
+                aria-describedby="rbd-hidden-text-1-hidden-text-17"
+                data-rbd-drag-handle-draggable-id="19"
+                data-rbd-drag-handle-context-id="1"
+                draggable="false"
+                style={{
+                  cursor: "pointer",
+                  background: "rgb(255, 255, 255)",
+                  z-index: 101,
+                }}
+              >
+                <td role="cell">20</td>
+                <td role="cell">
+                  <span class="react-table__highlighter"
+                    ><span class="">Bobby </span></span
+                  >
+                </td>
+                <td role="cell">Morrison</td>
+                <td role="cell">@cat</td>
+                <td role="cell">29</td>
+                <td role="cell">3/13/1999</td>
+                <td role="cell">Rome</td>
+                <td role="cell">Starlight</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <nav class="pagination" aria-label="pagination">
+          <ul dir="ltr" class="pagination">
+            <div class="pagination">
+              <button
+                type="button"
+                disabled=""
+                class="pagination__link pagination__link--arrow page-link"
+              >
+                <svg
+                  class="mdi-icon pagination__link-icon"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z"
+                  ></path>
+                </svg></button
+              ><button
+                type="button"
+                disabled=""
+                class="pagination__link pagination__link--arrow page-link"
+              >
+                <svg
+                  class="mdi-icon pagination__link-icon"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                  ></path>
+                </svg>
+              </button>
+              <li class="pagination__item page-item active">
+                <button type="button" class="pagination__link page-link">
+                  1
+                </button>
+              </li>
+              <li class="pagination__item page-item">
+                <button type="button" class="pagination__link page-link">
+                  2
+                </button>
+              </li>
+              <li class="pagination__item page-item">
+                <button type="button" class="pagination__link page-link">
+                  3
+                </button>
+              </li>
+              <li class="pagination__item page-item">
+                <button
+                  type="button"
+                  class="pagination__link pagination__link--arrow page-link"
+                >
+                  <svg
+                    class="mdi-icon pagination__link-icon"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+              <li class="pagination__item page-item">
+                <button
+                  type="button"
+                  class="pagination__link pagination__link--arrow page-link"
+                >
+                  <svg
+                    class="mdi-icon pagination__link-icon"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"
+                    ></path>
+                  </svg>
+                </button>
+              </li>
+              <li class="pagination__item pagination-info page-item">
+                Showing 1 to 15 of 35
+              </li>
+              <li class="pagination__item page-item">
+                <div class="pagination__select-form form-group">
+                  <select
+                    name="select"
+                    id="exampleSelect"
+                    class="pagination__item pagination-info form-control"
+                  >
+                    <option
+                      class="pagination__item pagination__item-option"
+                      value="15"
+                    >
+                      Show 15
+                    </option>
+                    <option
+                      class="pagination__item pagination__item-option"
+                      value="30"
+                    >
+                      Show 30
+                    </option>
+                    <option
+                      class="pagination__item pagination__item-option"
+                      value="45"
+                    >
+                      Show 45
+                    </option>
+                  </select>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
